@@ -1,0 +1,73 @@
+---@class Perpetua
+---@field options PerpetuaOptions
+---@field setup fun(opts: PerpetuaOptions|nil)
+---@field load fun(ambience: PerpetuaAmbience|nil)
+
+---@alias PerpetuaAmbience "dark" | "light"
+
+---@class PerpetuaOptions
+-- The default ambience to use on startup.
+---@field ambience PerpetuaAmbience
+
+---@alias PerpetuaColor "red" | "orange" | "yellow" | "lime" | "green" | "turquoise" | "cyan" | "cerulean" | "blue" | "violet" | "lavender" | "pink" | "red_back" | "orange_back" | "yellow_back" | "lime_back" | "green_back" | "turquoise_back" | "cyan_back" | "cerulean_back" | "blue_back" | "violet_back" | "lavender_back" | "pink_back" | "base0" | "base1" | "base2" | "base3" | "base4" | "base5" | "over0" | "over1" | "over2" | "text0" | "text1" | "text2"
+
+---@class PerpetuaPalette
+---@field red string
+---@field orange string
+---@field yellow string
+---@field lime string
+---@field green string
+---@field turquoise string
+---@field cyan string
+---@field cerulean string
+---@field blue string
+---@field violet string
+---@field lavender string
+---@field pink string
+---@field red_back string
+---@field orange_back string
+---@field yellow_back string
+---@field lime_back string
+---@field green_back string
+---@field turquoise_back string
+---@field cyan_back string
+---@field cerulean_back string
+---@field blue_back string
+---@field violet_back string
+---@field lavender_back string
+---@field pink_back string
+---@field base0 string
+---@field base1 string
+---@field base2 string
+---@field base3 string
+---@field base4 string
+---@field base5 string
+---@field over0 string
+---@field over1 string
+---@field over2 string
+---@field text0 string
+---@field text1 string
+---@field text2 string
+
+---@class Theme
+---@field get fun(ambience: PerpetuaAmbience|nil): Highlights
+
+---@alias Highlights table<string, Highlight>
+
+---@class Highlight
+---@field fg string|nil
+---@field bg string|nil
+---@field sp string|nil
+---@field blend integer|nil
+---@field bold boolean|nil
+---@field standout boolean|nil
+---@field underline boolean|nil
+---@field undercurl boolean|nil
+---@field underdouble boolean|nil
+---@field underdotted boolean|nil
+---@field underdashed boolean|nil
+---@field strikethrough boolean|nil
+---@field italic boolean|nil
+---@field reverse boolean|nil
+---@field nocombine boolean|nil
+---@field link string|nil
