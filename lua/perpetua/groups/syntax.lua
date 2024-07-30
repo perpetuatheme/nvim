@@ -44,7 +44,7 @@ function M.get(ambience)
     Underlined     = { underline = true }, -- text that stands out, HTML links
     Ignore         = { fg = C.text0 }, -- left blank, hidden  |hl-Ignore|
     Error          = { fg = C.red, bg = C.red_back }, -- any erroneous construct
-    Todo           = { fg = C.text0, bg = C.yellow_back }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Todo           = { fg = C.text1, bg = C.yellow_back }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
   }
 
   if ambience == "dark" then

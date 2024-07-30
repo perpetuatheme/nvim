@@ -3,7 +3,7 @@ local M = {}
 
 function M.get(ambience)
   local highlights = {
-    -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
+    -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/1c79da3300951e934f635eaf8703480b57644e7e/CONTRIBUTING.md
 
     ["@comment"]               = { link = "Comment" }, -- line and block comments
     ["@comment.documentation"] = { link = "Comment" }, -- comments documenting code
@@ -100,9 +100,9 @@ function M.get(ambience)
     ["@text.literal.block"]    = { fg = C.turquoise }, -- literal or verbatim text as a stand-alone block (use priority 90 for blocks with injections)
 
     ["@text.todo"]             = { link = "Todo" }, -- todo notes
-    ["@text.note"]             = { fg = C.text0, bg = C.blue_back }, -- info notes
+    ["@text.note"]             = { fg = C.text1, bg = C.blue_back }, -- info notes
     ["@text.warning"]          = { link = "Todo" }, -- warning notes
-    ["@text.danger"]           = { fg = C.text0, bg = C.red_back }, -- danger/error notes
+    ["@text.danger"]           = { fg = C.text1, bg = C.red_back }, -- danger/error notes
 
     ["@text.diff.add"]         = { link = "DiffAdd" }, -- added text (for diff files)
     ["@text.diff.delete"]      = { link = "DiffDelete" }, -- deleted text (for diff files)
