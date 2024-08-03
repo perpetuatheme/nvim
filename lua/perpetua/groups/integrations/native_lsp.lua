@@ -10,6 +10,7 @@ function M.get(_)
     LspReferenceText            = { fg = C.blue, bg = C.base3 }, -- used for highlighting "text" references
     LspReferenceRead            = { link = "LspReferenceText" }, -- used for highlighting "read" references
     LspReferenceWrite           = { link = "LspReferenceText" }, -- used for highlighting "write" references
+    LspInlayHint                = { link = "NonText" }, -- used for highlighting inlay hints
     LspCodeLens                 = { link = "Comment" }, -- Used to color the virtual text of the codelens. See |nvim_buf_set_extmark()|.
     LspCodeLensSeparator        = { fg = C.blue }, -- Used to color the separator between two or more code lenses.
     LspSignatureActiveParameter = { fg = C.violet }, -- Used to highlight the active parameter in the signature help. See |vim.lsp.handlers.signature_help()|.
